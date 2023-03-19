@@ -4,7 +4,7 @@
 
 Present a latest and greatest recharge cars.
 
-Here is how the design look like for desktop and mobile (files are stored under `docs` folder)
+Here is how the design look like for desktop and mobile 
 
 ### Desktop
 
