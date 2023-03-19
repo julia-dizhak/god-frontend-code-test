@@ -1,8 +1,8 @@
 # Volvo Cars (Global Online Digital)
 
-## Front-end coding test (React)
+## Front-end 
 
-Our team's designer has come up with a new design to show our latest and greatest recharge cars on the website.
+Present a latest and greatest recharge cars.
 
 Here is how the design look like for desktop and mobile (files are stored under `docs` folder)
 
@@ -13,6 +13,9 @@ Here is how the design look like for desktop and mobile (files are stored under 
 ### Mobile
 
 ![ProductListDesktop](./docs/ProductList-Mobile.png)
+
+
+### Data
 
 The data required to render the design is under `public/api/cars.json` folder. You need to fetch the data and render it in the browser. The data looks like this:
 
@@ -32,6 +35,7 @@ The product owner is telling you that you can generate the links to the learn an
 
 Two extra SVG icons are also provided by our designer which are stored under `docs` folder.
 
+
 ## Requirements
 
 - The project is bootstraped using [Next.js](https://nextjs.org/).
@@ -40,7 +44,17 @@ Two extra SVG icons are also provided by our designer which are stored under `do
 - Accessibility is important.
 - Code Structure and reusablity is important.
 
+
 ## Bonus Points:
 
 - If you use our design system component library, [VCC-UI](https://vcc-ui.vercel.app/)
 - If you add a filter bar on the top to filter cars by `bodyType`
+
+
+## To run locally
+
+Open a new terminal window and navigate to the folder.
+Run `npm install & npm run dev`. 
+This will install all packages and start the blog in localhost:3000.
+
+## Todo
