@@ -1,10 +1,14 @@
 import React from "react";
+import {Grid, Row} from "vcc-ui";
 
 export default function Custom404() {
   return (
-    <React.StrictMode>
-      <h1>404 - Not found</h1>
-    </React.StrictMode>
+    <Grid>
+    <Row>
+      <h1>404</h1>
+      <h2>No car found</h2>
+      </Row>
+    </Grid>
   );
 }
 

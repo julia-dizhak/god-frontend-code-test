@@ -1,12 +1,19 @@
 import React from "react"
 import Link from "next/link"
-import {Row, Col, Text, useTheme, Spacer} from "vcc-ui"
+import {Grid, Row, Col, Text, useTheme, Spacer} from "vcc-ui"
 import { Car } from "../pages/api/cars";
 import Image from 'next/image'
+import { CarListItemLink } from "./CarItemLink";
 
 type CarProps = {
   car: Car;
 }
+
+export enum RouteTypes {
+	LEARN = '/learn',
+	SHOP = '/shop',
+}
+
 export const CarItem = ({ car }: CarProps) => {
 	const theme = useTheme();
 
@@ -32,10 +39,18 @@ export const CarItem = ({ car }: CarProps) => {
                   width="400" height="300" layout="responsive" objectFit="contain"
               />
 			<Spacer />
-<footer>
-...
-          </footer>
-	
+			
+			<aside>
+			<Grid>
+			<Row align="center">
+    <Col size={6}>				<CarListItemLink route={`${RouteTypes.LEARN}/${car.id}`} text="Learn" /></Col>
+    <Col size={6}>        <CarListItemLink route={`${RouteTypes.SHOP}/${car.id}`} text="Shop" /></Col>
+  </Row>
+
+</Grid>
+
+
+      </aside>
 		</div>
 	)
 }
