@@ -6,6 +6,13 @@ Present a latest and greatest recharge cars.
 
 Here is how the design look like for desktop and mobile
 
+## To run a project locally
+
+Open a new terminal window and navigate to the folder.
+Run `npm install & npm run dev`.
+This will install all packages and start the blog in localhost:3000.
+
+
 ### Desktop
 
 ![ProductListDesktop](./docs/ProductList-Desktop.png)
@@ -47,10 +54,5 @@ Two extra SVG icons are also provided by our designer which are stored under `do
 -   If you use our design system component library, [VCC-UI](https://vcc-ui.vercel.app/)
 -   If you add a filter bar on the top to filter cars by `bodyType`
 
-## To run locally
-
-Open a new terminal window and navigate to the folder.
-Run `npm install & npm run dev`.
-This will install all packages and start the blog in localhost:3000.
 
 ## Todo
