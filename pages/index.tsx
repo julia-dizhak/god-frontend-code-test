@@ -5,6 +5,7 @@ import { Car } from '../interfaces/cars';
 import { CarsList } from '../src/components/CarsList';
 import { Text, Block } from 'vcc-ui';
 import { container, title, subTitle } from './home.styles';
+import CarSlider from '../src/components/CarSlider/CarSlider';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -31,7 +32,7 @@ const Home: React.FC = () => {
                 </Text>
             </Block>
             <Spacer size={10} />
-            <CarsList cars={data} />;
+            <CarSlider cars={data} />
         </>
     );
 };
