@@ -2,7 +2,7 @@ import React from 'react';
 import { useRouter } from 'next/router';
 import { Grid, Row } from 'vcc-ui';
 
-export default function Learn() {
+const Learn = () => {
     const router = useRouter();
     const { id } = router.query;
 
@@ -13,4 +13,6 @@ export default function Learn() {
             </Row>
         </Grid>
     );
-}
+};
+
+export default Learn;

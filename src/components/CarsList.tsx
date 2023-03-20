@@ -1,13 +1,12 @@
-import Link from 'next/link';
 import { Grid, Row } from 'vcc-ui';
-import { Car } from '../../pages/api/cars';
+import { Car } from '../../interfaces/cars';
 import { CarItem } from './CarItem';
 
 type CarsListProps = {
     cars: Car[];
 };
 
-export default function CarsList({ cars }: CarsListProps) {
+export const CarsList = ({ cars }: CarsListProps) => {
     return (
         <Grid>
             <Row>
@@ -21,4 +20,4 @@ export default function CarsList({ cars }: CarsListProps) {
             </Row>
         </Grid>
     );
-}
+};

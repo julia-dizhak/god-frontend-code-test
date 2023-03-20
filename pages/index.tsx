@@ -1,8 +1,8 @@
 import React from 'react';
 import useSWR from 'swr';
-import { Car } from './api/cars';
 import { Spinner } from 'vcc-ui';
-import CarsList from '../src/components/CarsList';
+import { Car } from '../interfaces/cars';
+import { CarsList } from '../src/components/CarsList';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -18,11 +18,7 @@ const Home: React.FC = () => {
         );
     if (!data) return null;
 
-    return (
-        <React.StrictMode>
-            <CarsList cars={data} />
-        </React.StrictMode>
-    );
+    return <CarsList cars={data} />;
 };
 
 export default Home;
