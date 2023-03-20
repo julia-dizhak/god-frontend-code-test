@@ -1,17 +1,8 @@
 # Volvo Cars (Global Online Digital)
 
-## Front-end
-
 Present a latest and greatest recharge cars.
 
 Here is how the design look like for desktop and mobile
-
-## To run a project locally
-
-Open a new terminal window and navigate to the folder.
-Run `npm install & npm run dev`.
-This will install all packages and start the blog in localhost:3000.
-
 
 ### Desktop
 
@@ -39,20 +30,28 @@ The data required to render the design is under `public/api/cars.json` folder. Y
 
 The product owner is telling you that you can generate the links to the learn and shop pages of each car by concatating the `id` of the car to the learn (`/learn/`) and shop (`/shop/`) urls.
 
-Two extra SVG icons are also provided by our designer which are stored under `docs` folder.
+## Prerequisites
+
+You'll need to have either: Node version 16 and above and npm version 7.
+
+## To run a project locally
+
+Open a new terminal window and navigate to the folder.
+Run `npm install & npm run dev`.
+This will install all packages and start the blog in localhost:3000.
 
 ## Requirements
 
--   The project is bootstraped using [Next.js](https://nextjs.org/).
+-   The project is built using [Next.js](https://nextjs.org/).
 -   Browser support is modern ever-green browsers.
--   Implement this design using React and Typescript.
--   Accessibility is important.
--   Code Structure and reusablity is important.
+-   Frontend implemented using React/Typescript.
+-   As system components I use library from Volvo [VCC-UI](https://vcc-ui.vercel.app/)
+-   ccs-in-js
 
-## Bonus Points:
+## Features:
 
--   If you use our design system component library, [VCC-UI](https://vcc-ui.vercel.app/)
--   If you add a filter bar on the top to filter cars by `bodyType`
-
+-   can filter cars by `bodyType`
 
 ## Todo
+
+-   testing UI and components
