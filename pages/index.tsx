@@ -2,7 +2,6 @@ import React from 'react';
 import useSWR from 'swr';
 import { Spinner, Spacer } from 'vcc-ui';
 import { Car } from '../interfaces/cars';
-import { CarsList } from '../src/components/CarsList';
 import { Text, Block } from 'vcc-ui';
 import { container, title, subTitle } from './home.styles';
 import CarSlider from '../src/components/CarSlider/CarSlider';

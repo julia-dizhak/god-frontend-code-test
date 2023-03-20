@@ -39,8 +39,8 @@ export const CarItem = ({ car }: CarProps) => {
                     alt={`Volvo car ${bodyType} of model ${modelName} which is a ${modelType}`}
                     layout="responsive"
                     objectFit="contain"
-                    width="400"
-                    height="300"
+                    width={400}
+                    height={300}
                 />
             </Flex>
 

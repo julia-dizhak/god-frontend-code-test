@@ -12,6 +12,7 @@ export const textContainer: ExtendCSS = {
 
 export const imageContainer: ExtendCSS = {
     border: 0,
+    margin: '14px 0 0 0',
 };
 
 export const linkContainer: ExtendCSS = {
@@ -19,6 +20,7 @@ export const linkContainer: ExtendCSS = {
     alignItems: 'center',
     textAlign: 'center',
     justifyContent: 'space-evenly',
+    padding: '0 0 40px 0',
 };
 
 export const bodyTypeText: ExtendCSS = ({ theme }: { theme: CurrentTheme }) => ({
