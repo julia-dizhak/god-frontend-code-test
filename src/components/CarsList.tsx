@@ -1,6 +1,6 @@
 import { Grid, Row } from 'vcc-ui';
 import { Car } from '../../interfaces/cars';
-import { CarItem } from './CarItem';
+import { CarItem } from './CarItem/CarItem';
 
 type CarsListProps = {
     cars: Car[];
