@@ -5,7 +5,7 @@ type PrevButtonProps = {
     onClick: () => void;
 };
 
-export const PrevButton = ({ disabled, onClick }: PrevButtonProps) => {
+const PrevButton = ({ disabled, onClick }: PrevButtonProps) => {
     return (
         <IconButton
             iconName="navigation-chevronback"
@@ -16,3 +16,5 @@ export const PrevButton = ({ disabled, onClick }: PrevButtonProps) => {
         ></IconButton>
     );
 };
+
+export default PrevButton;

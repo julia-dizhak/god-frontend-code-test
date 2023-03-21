@@ -9,7 +9,7 @@ type CarProps = {
     car: Car;
 };
 
-export const CarItem = ({ car }: CarProps) => {
+const CarItem = ({ car }: CarProps) => {
     const { id, bodyType, modelType, modelName, imageUrl } = car;
 
     return (
@@ -54,3 +54,5 @@ export const CarItem = ({ car }: CarProps) => {
         </Block>
     );
 };
+
+export default CarItem;

@@ -5,7 +5,7 @@ type NextButtonProps = {
     onClick: () => void;
 };
 
-export const NextButton = ({ disabled, onClick }: NextButtonProps) => {
+const NextButton = ({ disabled, onClick }: NextButtonProps) => {
     return (
         <IconButton
             iconName="navigation-chevronforward"
@@ -16,3 +16,5 @@ export const NextButton = ({ disabled, onClick }: NextButtonProps) => {
         ></IconButton>
     );
 };
+
+export default NextButton;

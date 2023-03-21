@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Car } from '../../interfaces/cars';
-import { CarItem } from '../CarItem/CarItem';
+import CarItem from '../CarItem/CarItem';
 import { useMediaQuery } from 'usehooks-ts';
 import { Block, Flex, Spacer } from 'vcc-ui';
 import { sliderContainer, navigationContainer } from './carSlider.styles';
 import SwiperClass, { Pagination } from 'swiper';
-import { NextButton } from './NextButton';
-import { PrevButton } from './PrevButton';
+import NextButton from './NextButton';
+import PrevButton from './PrevButton';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
