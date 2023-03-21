@@ -3,7 +3,7 @@ import useSWR from 'swr';
 import { Spinner } from 'vcc-ui';
 import { Car } from '../src/interfaces/cars';
 import { Text, Block, View } from 'vcc-ui';
-import { container, title, subTitle, filterContainer } from './home.styles';
+import { container, title, subTitle, filterContainer } from '../src/components/styles/home.styles';
 import CarSlider from '../src/components/CarSlider/CarSlider';
 import FilterCarModels from '../src/components/FilterCarModels/FilterCarModels';
 import { fetcher, useCarsFiltered } from '../src/hooks/useCarsFiltered';

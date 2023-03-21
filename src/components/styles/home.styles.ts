@@ -8,7 +8,6 @@ export const container: ExtendCSS = {
 
 export const filterContainer: ExtendCSS = {
     margin: '20px 10px 0 10px',
-
 };
 
 export const title: ExtendCSS = {
