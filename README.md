@@ -2,15 +2,8 @@
 
 Present a latest and greatest recharge cars.
 
-Here is how the design look like for desktop and mobile
+![ProductListDesktop](./docs/volvo-models.png)
 
-### Desktop
-
-![ProductListDesktop](./docs/ProductList-Desktop.png)
-
-### Mobile
-
-![ProductListDesktop](./docs/ProductList-Mobile.png)
 
 ### Data
 
