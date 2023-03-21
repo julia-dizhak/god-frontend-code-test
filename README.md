@@ -1,4 +1,4 @@
-# Volvo Cars 
+# Volvo Cars
 
 Present a latest and greatest recharge cars.
 
@@ -43,14 +43,19 @@ This will install all packages and start the blog in localhost:3000.
 ## Requirements
 
 -   The project is built using [Next.js](https://nextjs.org/).
--   Browser support is modern ever-green browsers.
--   Frontend implemented using React/Typescript.
+-   Use server-side rendering
+-   Frontend implemented using React / Typescript.
 -   As system components I use library from Volvo [VCC-UI](https://vcc-ui.vercel.app/)
 -   ccs-in-js
+-   prettier
+-   linting
+-   Browser support is modern ever-green browsers.
 
 ## Features:
 
+-   use slider [Swiperjs](https://swiperjs.com/)
 -   can filter cars by `bodyType`
+
 
 ## Todo
 

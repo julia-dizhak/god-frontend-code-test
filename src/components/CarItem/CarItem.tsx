@@ -10,7 +10,6 @@ type CarProps = {
 };
 
 export const CarItem = ({ car }: CarProps) => {
-    const theme = useTheme();
     const { id, bodyType, modelType, modelName, imageUrl } = car;
 
     return (
@@ -45,10 +44,10 @@ export const CarItem = ({ car }: CarProps) => {
             </Flex>
 
             <Flex extend={linkContainer}>
-                <Link href={`${RouteTypes.LEARN}/${car.id}`} arrow="right">
+                <Link href={`${RouteTypes.LEARN}/${id}`} arrow="right">
                     Learn
                 </Link>
-                <Link href={`${RouteTypes.SHOP}/${car.id}`} arrow="right">
+                <Link href={`${RouteTypes.SHOP}/${id}`} arrow="right">
                     Shop
                 </Link>
             </Flex>

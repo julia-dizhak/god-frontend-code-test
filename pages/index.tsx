@@ -5,6 +5,7 @@ import { Car } from '../interfaces/cars';
 import { Text, Block, View } from 'vcc-ui';
 import { container, title, subTitle } from './home.styles';
 import CarSlider from '../src/components/CarSlider/CarSlider';
+import { FilterCarModels } from '../src/components/FilterCarModels/FilterCarModels';
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json());
 
@@ -31,7 +32,7 @@ const Home: React.FC = () => {
     if (!data) return null;
 
     return (
-        <>
+        <section>
             <Block extend={container}>
                 <Text subStyle="emphasis" as="h1" extend={title}>
                     Volvo Cars launches pure electric concept Recharge!
@@ -41,8 +42,10 @@ const Home: React.FC = () => {
                 </Text>
             </Block>
             <Spacer size={10} />
+            <FilterCarModels cars={data} />
+            <Spacer size={5} />
             <CarSlider cars={data} />
-        </>
+        </section>
     );
 };
 
