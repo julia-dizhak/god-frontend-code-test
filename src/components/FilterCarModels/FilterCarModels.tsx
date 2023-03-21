@@ -1,18 +1,14 @@
 import React, { useContext, useMemo } from 'react';
 import { SelectInput, Flex, Block } from 'vcc-ui';
-import { CarModelsFilterContext } from '../../../context/CarModelsFilterProvider';
-import { Car } from '../../../interfaces/cars';
+import { CarModelsFilterContext } from '../../context/CarModelsFilterProvider';
 import { filterContainer, container } from './filterCarModels.styles';
 
 type FilterCarModelsProps = {
-    cars: Car[];
+    modelsBodyTypes: string[];
 };
 
-export const FilterCarModels = ({ cars }: FilterCarModelsProps) => {
+export const FilterCarModels = ({ modelsBodyTypes }: FilterCarModelsProps) => {
     const { filter, setFilter } = useContext(CarModelsFilterContext);
-
-    const carBodyTypes = useMemo(() => cars.map(({ bodyType }) => bodyType), [cars]);
-    const bodyTypes = [...new Set(carBodyTypes)];
 
     return (
         <Flex extend={filterContainer}>
@@ -23,7 +19,7 @@ export const FilterCarModels = ({ cars }: FilterCarModelsProps) => {
                     allowEmpty
                     label="Select a body type"
                 >
-                    {bodyTypes.map((name, index) => (
+                    {modelsBodyTypes.map((name, index) => (
                         <option key={index} value={name}>
                             {name}
                         </option>

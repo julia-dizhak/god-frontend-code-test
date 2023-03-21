@@ -8,7 +8,7 @@ const Learn = () => {
 
     return (
         <View>
-            <h1> Learn - {id}</h1>
+            <h1> Learn | {id}</h1>
         </View>
     );
 };

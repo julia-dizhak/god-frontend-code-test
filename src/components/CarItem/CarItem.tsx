@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, useTheme, Spacer, Block, Flex, Link } from 'vcc-ui';
 import Image from 'next/image';
-import { Car } from '../../../interfaces/cars';
-import { RouteTypes } from '../../../interfaces/routes';
+import { Car } from '../../interfaces/cars';
+import { RouteTypes } from '../../interfaces/routes';
 import { container, textContainer, imageContainer, linkContainer, bodyTypeText, modelTypeText } from './carItem.styles';
 
 type CarProps = {

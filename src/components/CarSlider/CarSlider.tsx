@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Car } from '../../../interfaces/cars';
+import { Car } from '../../interfaces/cars';
 import { CarItem } from '../CarItem/CarItem';
 import { useMediaQuery } from 'usehooks-ts';
 import { Block, Flex, Spacer } from 'vcc-ui';
