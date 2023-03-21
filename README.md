@@ -46,17 +46,17 @@ This will install all packages and start the blog in localhost:3000.
 -   Use server-side rendering
 -   Frontend implemented using React / Typescript.
 -   As system components I use library from Volvo [VCC-UI](https://vcc-ui.vercel.app/)
--   ccs-in-js
+-   CSS-in-js
 -   prettier
 -   linting
--   Browser support is modern ever-green browsers.
+-   Browser support is modern ever-green browsers
+-   respnsive
 
 ## Features:
 
--   use slider [Swiperjs](https://swiperjs.com/)
+-   can slide cars ( as a slider use [Swiperjs](https://swiperjs.com/)
 -   can filter cars by `bodyType`
-
 
 ## Todo
 
--   testing UI and components
+-   testing UI, components and utils

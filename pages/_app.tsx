@@ -17,4 +17,5 @@ const HomePage = ({ Component, pageProps }: AppProps) => {
         </StyleProvider>
     );
 };
+
 export default HomePage;

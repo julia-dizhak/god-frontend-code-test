@@ -7,7 +7,7 @@ type FilterCarModelsProps = {
     modelsBodyTypes: string[];
 };
 
-export const FilterCarModels = ({ modelsBodyTypes }: FilterCarModelsProps) => {
+const FilterCarModels = ({ modelsBodyTypes }: FilterCarModelsProps) => {
     const { filter, setFilter } = useContext(CarModelsFilterContext);
 
     return (
@@ -29,3 +29,5 @@ export const FilterCarModels = ({ modelsBodyTypes }: FilterCarModelsProps) => {
         </Flex>
     );
 };
+
+export default FilterCarModels;
