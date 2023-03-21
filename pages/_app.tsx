@@ -2,13 +2,16 @@ import React from 'react';
 import { AppProps } from 'next/app';
 import { StyleProvider, ThemePicker } from 'vcc-ui';
 import '../css/styles.css';
+import { CarModelsFilterProvider } from '../context/CarModelsFilterProvider';
 
 const HomePage = ({ Component, pageProps }: AppProps) => {
     return (
         <StyleProvider>
             <ThemePicker variant="light">
                 <React.StrictMode>
-                    <Component {...pageProps} />
+                    <CarModelsFilterProvider>
+                        <Component {...pageProps} />
+                    </CarModelsFilterProvider>
                 </React.StrictMode>
             </ThemePicker>
         </StyleProvider>

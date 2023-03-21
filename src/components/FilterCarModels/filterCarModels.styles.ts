@@ -1,8 +1,7 @@
 import { ExtendCSS } from 'vcc-ui';
 
 export const filterContainer: ExtendCSS = {
-    padding: '20px 26px 20px 0px',
-    margin: '20px 10px 0 10px',
+    padding: '10px 26px 10px 0',
     color: '#000',
 };
 
