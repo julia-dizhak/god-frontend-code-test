@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Car } from '../../interfaces/cars';
-import CarItem from '../CarItem/CarItem';
+import { CarItem } from '../CarItem/CarItem';
 import { useMediaQuery } from 'usehooks-ts';
 import { Block, Flex, Spacer } from 'vcc-ui';
 import { sliderContainer, navigationContainer } from './carSlider.styles';
@@ -18,7 +18,7 @@ type CarSliderProps = {
 
 const SLIDES_SHOW_DEFAULT = 4;
 
-const CarSlider = ({ cars }: CarSliderProps) => {
+export const CarSlider = ({ cars }: CarSliderProps) => {
     const [prevDisabled, setPrevDisabled] = useState(true);
     const [nextDisabled, setNextDisabled] = useState(false);
     const [swiperRef, setSwiperRef] = useState<SwiperClass>();
@@ -29,7 +29,7 @@ const CarSlider = ({ cars }: CarSliderProps) => {
     const slidesPerView = isDesktop ? 4 : isTablet ? 2.3 : 1.3;
     const showNavigation = isDesktop && (swiperRef?.slides?.length || 0) > SLIDES_SHOW_DEFAULT;
 
-    swiperRef?.on('slideChange', (swiper) => {
+    swiperRef?.on('slideChange', (swiper: { activeIndex: number }) => {
         if (swiper.activeIndex === 0) {
             setPrevDisabled(true);
         } else if (swiper.activeIndex === (cars.length || 0) - SLIDES_SHOW_DEFAULT) {
@@ -69,5 +69,3 @@ const CarSlider = ({ cars }: CarSliderProps) => {
         </Block>
     );
 };
-
-export default CarSlider;

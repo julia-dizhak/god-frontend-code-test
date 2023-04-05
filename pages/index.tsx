@@ -4,7 +4,7 @@ import { Spinner } from 'vcc-ui';
 import { Car } from '../src/interfaces/cars';
 import { Text, Block, View } from 'vcc-ui';
 import { container, title, subTitle, filterContainer } from '../src/components/styles/home.styles';
-import CarSlider from '../src/components/CarSlider/CarSlider';
+import { CarSlider } from '../src/components/CarSlider/CarSlider';
 import FilterCarModels from '../src/components/FilterCarModels/FilterCarModels';
 import { fetcher, useCarsFiltered } from '../src/hooks/useCarsFiltered';
 
@@ -29,13 +29,18 @@ const Home: React.FC = () => {
             </div>
         );
 
-    if (!data) return null;
+    if (!data)
+        return (
+            <Text subStyle="emphasis" as="h1" extend={title}>
+                Volvo Cars are not available
+            </Text>
+        );
 
     return (
         <section>
             <Block extend={container}>
                 <Text subStyle="emphasis" as="h1" extend={title}>
-                    Volvo Cars launches pure electric concept Recharge!
+                    Volvo Cars launches pure electric concept <em>Recharge</em>!
                 </Text>
             </Block>
 

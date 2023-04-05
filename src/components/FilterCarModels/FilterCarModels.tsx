@@ -1,18 +1,26 @@
-import React, { useContext, useMemo } from 'react';
-import { SelectInput, Flex, Block } from 'vcc-ui';
+import React, { useContext } from 'react';
+import { SelectInput, Flex, Block, useTheme } from 'vcc-ui';
 import { CarModelsFilterContext } from '../../context/CarModelsFilterProvider';
-import { filterContainer, container } from './filterCarModels.styles';
+import { filterContainer } from './filterCarModels.styles';
 
 type FilterCarModelsProps = {
     modelsBodyTypes: string[];
 };
 
 const FilterCarModels = ({ modelsBodyTypes }: FilterCarModelsProps) => {
+    const { breakpoints } = useTheme();
     const { filter, setFilter } = useContext(CarModelsFilterContext);
 
     return (
         <Flex extend={filterContainer}>
-            <Block extend={container}>
+            <Block
+                extend={{
+                    [breakpoints.untilM]: {
+                        width: '100%',
+                    },
+                    width: '40%',
+                }}
+            >
                 <SelectInput
                     value={filter}
                     onChange={(event) => setFilter(event.target.value)}

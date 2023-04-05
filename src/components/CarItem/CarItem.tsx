@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, useTheme, Spacer, Block, Flex, Link } from 'vcc-ui';
+import { Text, Spacer, Block, Flex, Link } from 'vcc-ui';
 import Image from 'next/image';
 import { Car } from '../../interfaces/cars';
 import { RouteTypes } from '../../interfaces/routes';
@@ -9,7 +9,7 @@ type CarProps = {
     car: Car;
 };
 
-const CarItem = ({ car }: CarProps) => {
+export const CarItem = ({ car }: CarProps) => {
     const { id, bodyType, modelType, modelName, imageUrl } = car;
 
     return (
@@ -54,5 +54,3 @@ const CarItem = ({ car }: CarProps) => {
         </Block>
     );
 };
-
-export default CarItem;
