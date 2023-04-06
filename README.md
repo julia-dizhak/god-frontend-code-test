@@ -34,14 +34,13 @@ The product owner is telling you that you can generate the links to the learn an
 
 ### Requirements
 
-- The project is bootstraped using Next.js.
-- Browser support is modern ever-green browsers.
-- Implement this design using React and Typescript.
-- Accessibility is important.
-- Code Structure and reusablity is important.
+-   The project is bootstraped using Next.js.
+-   Browser support is modern ever-green browsers.
+-   Implement this design using React and Typescript.
+-   Accessibility is important.
+-   Code Structure and reusablity is important.
 
-
-## Demo
+## Demo and solution
 
 Present a latest and greatest recharge cars.
 
@@ -49,16 +48,25 @@ Present a latest and greatest recharge cars.
 
 ![Screenshot](./docs/volvo-models.png)
 
-
 ## Prerequisites
 
 You'll need to have either: Node version 16 and above and npm version 7.
 
 ## Run project locally
 
+```
+git clone https://github.com/julia-dizhak/god-frontend-code-test
+```
+
 Open a new terminal window and navigate to the folder.
 Run `npm install & npm run dev`.
 This will install all packages and start the app in localhost:3000
+
+## Run tests
+
+```
+run npm test
+```
 
 ## Deploy
 
@@ -83,7 +91,6 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 
 ![Metrics](/docs/Volvo-Lighthouse-metrics.png)
 
-
 ## Features:
 
 -   User can have access to the latest Volvo cars
@@ -92,7 +99,8 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 
 ### Todo
 
--   testing UI, components and utils
--   In terms of structure: separate folder for types, absolute paths, 
--   In terms of functionality. For example, add numbers of cars
+-   Add more tests (for the most important part of functionality),testing UI: components and utils, add e2e testing. Setup react-testing-library
+-   Add test coverage
+-   In terms of structure: separate folder for types, absolute paths, etc
+-   In terms of functionality: sort cars initially by name or date, add numbers of cars in select
 -   Add database and CRM

@@ -6,7 +6,8 @@ import { Text, Block, View } from 'vcc-ui';
 import { container, title, subTitle, filterContainer } from '../src/components/styles/home.styles';
 import { CarSlider } from '../src/components/CarSlider/CarSlider';
 import FilterCarModels from '../src/components/FilterCarModels/FilterCarModels';
-import { fetcher, useCarsFiltered } from '../src/hooks/useCarsFiltered';
+import { useCarsFiltered } from '../src/hooks/useCarsFiltered';
+import { fetcher } from '../src/utils/fetcher';
 import Head from 'next/head';
 
 const Home: React.FC = () => {
