@@ -1,13 +1,18 @@
-# Volvo Cars
+# Volvo Cars (Global Online Digital)
 
-## Demo
-Present a latest and greatest recharge cars.
+## UI mockups
 
-![Demo](https://volvo-god-frontend-code-test.vercel.app/)
+Our team's designer has come up with a new design to show our latest and greatest recharge cars on the website.
 
+Here is how the design look like for desktop and mobile
 
-![Screenshot](./docs/volvo-models.png)
+### Desktop
 
+[Desktop version](./docs/ProductList-Desktop.png)
+
+### Mobile
+
+[Mobile version](./docs/ProductList-Mobile.png)
 
 ### Data
 
@@ -25,43 +30,58 @@ The data required to render the design is under `public/api/cars.json` folder. Y
 ]
 ```
 
-The product owner is telling you that you can generate the links to the learn and shop pages of each car by concatating the `id` of the car to the learn (`/learn/`) and shop (`/shop/`) urls.
-
-### UI mockups
-Here is how the design look like for desktop and mobile
-
-#### Desktop
-![ProductListDesktop](./docs/ProductList-Desktop.png)
-
-#### Mobile
-![ProductListDesktop](./docs/ProductList-Mobile.png)
-
-### Prerequisites
-
-You'll need to have either: Node version 16 and above and npm version 7.
-
-### Run project locally
-
-Open a new terminal window and navigate to the folder.
-Run `npm install & npm run dev`.
-This will install all packages and start the blog in localhost:3000.
+The product owner is telling you that you can generate the links to the learn and shop pages of each car by concatenating the `id` of the car to the learn (`/learn/`) and shop (`/shop/`) urls.
 
 ### Requirements
 
+- The project is bootstraped using Next.js.
+- Browser support is modern ever-green browsers.
+- Implement this design using React and Typescript.
+- Accessibility is important.
+- Code Structure and reusablity is important.
+
+
+## Demo
+
+Present a latest and greatest recharge cars.
+
+[Demo](https://volvo-god-frontend-code-test.vercel.app/)
+
+![Screenshot](./docs/volvo-models.png)
+
+
+## Prerequisites
+
+You'll need to have either: Node version 16 and above and npm version 7.
+
+## Run project locally
+
+Open a new terminal window and navigate to the folder.
+Run `npm install & npm run dev`.
+This will install all packages and start the app in localhost:3000
+
+## Deploy
+
+It is deploying automatically using vercel as soon as new commit pushed to this repo
+
+## Technical details
+
 -   The project is built using [Next.js](https://nextjs.org/).
--   Use server-side rendering
--   Frontend implemented using React / Typescript.
--   As system components I use library from Volvo [VCC-UI](https://vcc-ui.vercel.app/)
+-   Used server-side rendering
+-   Frontend implemented using React/Typescript.
+-   As system components used a library from Volvo [VCC-UI](https://vcc-ui.vercel.app/)
 -   CSS-in-js
--   prettier
--   linting
+-   Prettier
+-   Linting
 -   Browser support is modern ever-green browsers
--   responsive
+-   Support responsive using media queries
 
-### Features:
 
--   user can slide cars ( as a slider use [Swiperjs](https://swiperjs.com/) )
--   user can filter cars by `bodyType`
+## Features:
+
+-   User can have access to the latest Volvo cars
+-   User can slide cars ( as a slider I used [Swiperjs](https://swiperjs.com/) )
+-   User can filter cars by `bodyType`
 
 ### Todo
 
