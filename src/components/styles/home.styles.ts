@@ -1,4 +1,4 @@
-import { ExtendCSS } from 'vcc-ui';
+import { ExtendCSS, CurrentTheme } from 'vcc-ui';
 
 export const container: ExtendCSS = {
     textAlign: 'center',
@@ -15,7 +15,8 @@ export const title: ExtendCSS = {
     color: '#fff',
 };
 
-export const subTitle: ExtendCSS = {
+export const subTitle: ExtendCSS = ({ theme }: { theme: CurrentTheme }) => ({
     fontSize: '1.4rem !important',
-    color: '#fff',
-};
+    color: theme.color.foreground.primary,
+    fontWeight: 'bold',
+});

@@ -75,6 +75,8 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 -   Linting
 -   Browser support is modern ever-green browsers
 -   Support responsive using media queries
+-   SEO
+-   Accessibility
 
 
 ## Features:
@@ -86,3 +88,5 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 ### Todo
 
 -   testing UI, components and utils
+-   Extend functionality: add numbers of cars
+-   Add database and CRM
