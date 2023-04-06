@@ -51,6 +51,7 @@ const Home: React.FC = () => {
                 <meta name="theme-color" media="(prefers-color-scheme: light)" content="cyan" />
                 <link rel="shortcut icon" href="/favicon.png" />
             </Head>
+            
             <section>
                 <Block extend={container}>
                     <Text subStyle="emphasis" as="h1" extend={title}>

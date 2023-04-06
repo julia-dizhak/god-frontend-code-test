@@ -77,6 +77,11 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 -   Support responsive using media queries
 -   SEO
 -   Accessibility
+-   Tested in Lighthouse
+
+## Lighthouse score
+
+![Metrics](/docs/Volvo-Lighthouse-metrics.png)
 
 
 ## Features:
