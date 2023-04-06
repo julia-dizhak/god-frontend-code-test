@@ -48,11 +48,9 @@ Present a latest and greatest recharge cars.
 
 ![Screenshot](./docs/volvo-models.png)
 
-## Prerequisites
+## Run project locally
 
 You'll need to have either: Node version 16 and above and npm version 7.
-
-## Run project locally
 
 ```
 git clone https://github.com/julia-dizhak/god-frontend-code-test
@@ -64,8 +62,10 @@ This will install all packages and start the app in localhost:3000
 
 ## Run tests
 
+run unit tests
+
 ```
-run npm test
+npm test
 ```
 
 ## Deploy
@@ -101,6 +101,7 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 
 -   Add more tests (for the most important part of functionality),testing UI: components and utils, add e2e testing. Setup react-testing-library
 -   Add test coverage
+-   Define enums correctly
 -   In terms of structure: separate folder for types, absolute paths, etc
 -   In terms of functionality: sort cars initially by name or date, add numbers of cars in select
 -   Add database and CRM
