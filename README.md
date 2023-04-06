@@ -101,6 +101,7 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 
 -   Add more tests (for the most important part of functionality),testing UI: components and utils, add e2e testing. Setup react-testing-library
 -   Add test coverage
+-   Security concerns (I do not have users or real data from clients) ?
 -   Define enums correctly
 -   In terms of structure: separate folder for types, absolute paths, etc
 -   In terms of functionality: sort cars initially by name or date, add numbers of cars in select
