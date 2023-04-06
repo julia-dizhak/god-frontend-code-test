@@ -33,14 +33,16 @@ export const CarItem = ({ car }: CarProps) => {
             <Spacer size={4} />
 
             <Flex extend={imageContainer}>
-                <Image
-                    src={imageUrl}
-                    alt={`Volvo car ${bodyType} of model ${modelName} which is a ${modelType}`}
-                    layout="responsive"
-                    objectFit="contain"
-                    width={400}
-                    height={300}
-                />
+                <Link href={`${RouteTypes.LEARN}/${id}`}>
+                    <Image
+                        src={imageUrl}
+                        alt={`Volvo car ${bodyType} of model ${modelName} which is a ${modelType}`}
+                        layout="responsive"
+                        objectFit="contain"
+                        width={400}
+                        height={300}
+                    />
+                </Link>
             </Flex>
 
             <Flex extend={linkContainer}>

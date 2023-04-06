@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRouter } from 'next/router';
-import { View } from 'vcc-ui';
+import { View, Link } from 'vcc-ui';
 
 const Learn = () => {
     const router = useRouter();
@@ -9,6 +9,10 @@ const Learn = () => {
     return (
         <View>
             <h1> Learn | {id}</h1>
+
+            <Link type="button" onClick={() => router.back()} arrow="left">
+                go back
+            </Link>
         </View>
     );
 };

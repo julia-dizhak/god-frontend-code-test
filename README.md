@@ -93,5 +93,6 @@ It is deploying automatically using vercel as soon as new commit pushed to this 
 ### Todo
 
 -   testing UI, components and utils
--   Extend functionality: add numbers of cars
+-   In terms of structure: separate folder for types, absolute paths, 
+-   In terms of functionality. For example, add numbers of cars
 -   Add database and CRM
