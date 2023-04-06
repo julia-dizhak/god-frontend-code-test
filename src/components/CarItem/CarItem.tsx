@@ -15,7 +15,7 @@ export const CarItem = ({ car }: CarProps) => {
     return (
         <Block extend={container}>
             <header>
-                <Text as="h3" subStyle="emphasis" extend={bodyTypeText}>
+                <Text subStyle="emphasis" extend={bodyTypeText}>
                     {bodyType}
                 </Text>
 
@@ -24,7 +24,7 @@ export const CarItem = ({ car }: CarProps) => {
                         {modelName}
                     </Text>
                     <Spacer />
-                    <Text as="h4" variant="columbus" subStyle="standard" extend={modelTypeText}>
+                    <Text as="h3" variant="columbus" subStyle="standard" extend={modelTypeText}>
                         {modelType}
                     </Text>
                 </Flex>

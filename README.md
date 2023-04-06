@@ -8,11 +8,11 @@ Here is how the design look like for desktop and mobile
 
 ### Desktop
 
-[Desktop version](./docs/ProductList-Desktop.png)
+[UI Desktop version](./docs/ProductList-Desktop.png)
 
 ### Mobile
 
-[Mobile version](./docs/ProductList-Mobile.png)
+[UI Mobile version](./docs/ProductList-Mobile.png)
 
 ### Data
 
