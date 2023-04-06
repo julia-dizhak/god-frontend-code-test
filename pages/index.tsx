@@ -50,7 +50,7 @@ const Home: React.FC = () => {
                 <meta name="author" content="Julia Dizhak" />
                 <meta name="keywords" content="html,css,typescript,react,nextjs" />
                 <meta name="theme-color" media="(prefers-color-scheme: light)" content="cyan" />
-                <link rel="shortcut icon" href="../public/images/favicon.ico" />
+                <link rel="shortcut icon" href="/favicon.ico" />
             </Head>
 
             <section>
